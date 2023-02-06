@@ -27,7 +27,7 @@ export function Login() {
     <Container>
       <section className="imgseccion">
         <div className="pikachu">
-          <img className="pikachu" src={pikachu} />
+          <img className="pikachu " src={pikachu} />
         </div>
         <div className="fondocontent">
           <img src={pokeball} />
@@ -58,6 +58,7 @@ const Container = styled.div`
   flex-direction: column-reverse;
   width: 100vw;
 
+  ////////// IMAGENES LOGIN   ///////////
   .imgseccion {
     background-color: white;
 
@@ -70,9 +71,9 @@ const Container = styled.div`
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 35px;
+    gap: 0px;
     margin-top: 20px;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
     h1 {
       font-size: 35px;
       font-weight: 650;
@@ -80,13 +81,15 @@ const Container = styled.div`
     h4 {
       color: #aaaaaa;
     }
+
+    //pokebola
     .fondocontent {
       display: flex;
       justify-content: center;
       img {
-        width: 50%;
-        -webkit-animation: flotar 4s ease-in-out infinite;
-        animation: flotar 5s ease-in-out infinite;
+        width: 60%;
+        -webkit-animation: flotar 6s ease-in-out infinite;
+        animation: flotar rotar ease-in-out infinite;
       }
     }
   }
@@ -170,21 +173,14 @@ const Container = styled.div`
   }
   @keyframes flotar {
     0% {
-      transform: translate(px0, 0px);
+      transform: rotate(180deg);
     }
     50% {
-      transform: translate(0px, 180px);
+      transform: translate(0px, 140px);
     }
     100% {
-      transform: translate(0, 0px);
+      transform: rotate(180deg);
     }
   }
-  @keyframes rotate {
-    from {
-      transform: rotate(30deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  
 `;

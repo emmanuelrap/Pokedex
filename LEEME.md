@@ -6,6 +6,6 @@
 
 # Dependencias
 
-npm install firebase
-npm i react-router-dom
-npm i styled-components
+    npm install firebase
+    npm i react-router-dom
+    npm i styled-components

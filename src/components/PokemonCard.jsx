@@ -66,6 +66,7 @@ export function PokemonCard({
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
       >
+        {/* imagen pokemon lista */}
         <img
           src={image}
           alt={name}
