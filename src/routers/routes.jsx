@@ -19,20 +19,21 @@ export function MyRoutes() {
         <Route
           path="/"
           element={
-            <RequireAuth>
-              <Pokedex />
-            </RequireAuth>
+            <Pokedex />
+            // <RequireAuth>
+            //   <Pokedex />
+            // </RequireAuth>
           }
         />
         <Route path="/login" element={<Login />} />
-        <Route
+        {/* <Route
           path="/perfil"
           element={
             <ProtectorRuta>
               <Perfil></Perfil>
             </ProtectorRuta>
           }
-        />
+        /> */}
       </Routes>
     </BrowserRouter>
   );
