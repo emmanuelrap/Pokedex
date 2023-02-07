@@ -19,10 +19,10 @@ export function MyRoutes() {
         <Route
           path="/"
           element={
-            <Pokedex />
-            // <RequireAuth>
-            //   <Pokedex />
-            // </RequireAuth>
+           
+            <RequireAuth>
+              <Pokedex />
+            </RequireAuth>
           }
         />
         <Route path="/login" element={<Login />} />
